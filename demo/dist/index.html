@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Capacitor Motion Demo</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #dot {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #14b8a6;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #info {
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      font-size: 14px;
+      color: #a5f3fc;
+      white-space: pre;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-dCI4nHCt.js"></script>
+</head>
+
+<body>
+  <h1>Native Motion Plugin Demo</h1>
+  <p>Move or rotate your phone to move the teal dot.</p>
+  <div id="dot"></div>
+  <pre id="info"></pre>
+
+</body>
+
+</html>

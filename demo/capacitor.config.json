@@ -1,0 +1,8 @@
+{
+  "appId": "com.boazblake.motiondemo",
+  "appName": "Motion Demo",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

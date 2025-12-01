@@ -1,0 +1,58 @@
+{
+  "name": "capacitor-native-motion",
+  "version": "0.1.8",
+  "description": "High-frequency native device motion plugin for Capacitor — streams quaternion + gravity + rotation rate at up to 100 Hz",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "android/src/",
+    "android/build.gradle",
+    "ios/",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "motion",
+    "quaternion",
+    "gravity",
+    "rotation",
+    "sensor",
+    "ar",
+    "ios",
+    "android"
+  ],
+  "author": "Boaz Blake",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boazblake/capacitor-native-motion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boazblake/capacitor-native-motion/issues"
+  },
+  "homepage": "https://github.com/boazblake/capacitor-native-motion#readme",
+  "capacitor": {
+    "ios": {
+      "src": "CapacitorNativeMotion.podspec"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/core": "^6.0.0",
+    "typescript": "^5.6.0",
+    "rimraf": "^5.0.0"
+  }
+}

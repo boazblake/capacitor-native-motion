@@ -1,0 +1,4 @@
+// android/gradle.additions.txt
+// In AndroidManifest.xml (app) you can add optional features:
+<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+<uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false" />
