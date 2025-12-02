@@ -2,14 +2,15 @@
   "name": "capacitor-native-motion",
   "version": "0.1.8",
   "description": "High-frequency native device motion plugin for Capacitor — streams quaternion + gravity + rotation rate at up to 100 Hz",
-  "main": "dist/cjs/index.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "files": [
     "android/src/",
     "android/build.gradle",
     "ios/",
-    "dist/"
+    "dist/",
+    "ios/CapacitorNativeMotion.podspec"
   ],
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
@@ -41,7 +42,7 @@
   "homepage": "https://github.com/boazblake/capacitor-native-motion#readme",
   "capacitor": {
     "ios": {
-      "src": "CapacitorNativeMotion.podspec"
+      "src": "ios"
     },
     "android": {
       "src": "android"
